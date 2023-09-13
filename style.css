@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:monospace;
+    background-color:azure;
+}
+header{
+    background-color:cornflowerblue;
+    padding:20px;
+    color:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+header h1{
+    font-size:20px;
+}
+.nav-btn{
+    cursor: pointer;
+}
+main{
+    min-height:80vh;
+    padding:20px;
+    max-width:800px;
+    margin: 0 auto;
+}
+.main form{
+    display:flex;
+    justify-content:center;
+}
+form input[type="text"],
+button[type="submit"],
+.result div a{
+   
+    font-size: 16px;
+    font-weight:500;
+    font-family: monospace;
+    border-radius:5px;
+    padding:calc(20px/2);
+    margin: 3px;
+}
+form input[type="text"]{
+    flex-grow:1;
+    border-color:cornflowerblue;
+    width:80%;
+}
+form button[type="submit"]
+{
+    background-color:cornflowerblue;
+    box-shadow:0px 0px 10px royalblue;
+    color:black;
+    cursor: pointer;
+}
+footer{
+    background-color:cornflowerblue;
+    color:black;
+    padding:20px;
+    text-align:center;
+    position:fixed;
+    width:100%;
+    font-size:15px;
+}
+footer p a{
+    text-decoration:none;
+    font-family:monospace;
+    color:white;
+}
+.result{
+    margin-top: 20px;
+    font-weight: 1000;
+    box-shadow:0px 0px 10px royalblue;
+    background-color:cornflowerblue;
+    color:black;
+    border-radius:5px;
+    padding:30px;
+    width:90%;
+    /* display:flex;
+    flex-direction:column;
+    justify-content:space-between; */
+}
+.result p{
+    margin-top:25px;
+}
+.result p[class="pos"]{
+    margin-top:2px;
+    color:black;
+}
+.result div{
+    margin-top:20px;
+}
+.ant{
+    text-decoration:none;
+    background-color:white;
+    /* box-shadow:0px 0px 10px royalblue; */
+    color:black;
+    border:50ch;
+}
+@media screen and(max-width:320px){
+    main form{
+        flex-direction:column;
+    }
+    form button[type="submit"]{
+          margin-left: 0px;
+          margin-top:10px;
+    }
+}
+/*
+
+.af{
+    margin-bottom:100px;
+}
+.af{
+    
+    
+} */
